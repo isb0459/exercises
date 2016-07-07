@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <title>Welcome to NeuroScouting</title>
+  <script>
+  function validAddr() {
+      var a = document.forms["email"]["addr"].value;
+      var i = a.lastIndexOf('@');
+      if (i < 0 || i==a.length ) {
+	  alert("please enter valid email address");
+	  return false;
+      }
+      // else { alert("sending " + a); } 
+  }
+  </script>
+</head>
+<body>
+  <!-- 	onsubmit="return validAddr()"> -->
+  <form method="post" action="/cgi-bin/email_link.cgi">
+    <p>Please enter your email address:
+      <input type="text" name="addr" width="80" value="" />
+      <input type="submit" value="send" />
+    </p>
+  </form>
+</body>
+</html>
