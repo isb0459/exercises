@@ -11,13 +11,13 @@
 	  alert("please enter valid email address");
 	  return false;
       }
-      // else { alert("sending " + a); } 
+      return true; 
   }
   </script>
 </head>
 <body>
-  <!-- 	onsubmit="return validAddr()"> -->
-  <form method="post" action="/cgi-bin/email_link.cgi">
+  <form name="email" method="post" action="/cgi-bin/email_link.py" 
+	onsubmit="return validAddr()">
     <p>Please enter your email address:
       <input type="text" name="addr" width="80" value="" />
       <input type="submit" value="send" />
