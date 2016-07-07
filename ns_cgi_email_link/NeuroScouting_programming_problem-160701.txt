@@ -1,4 +1,4 @@
-No worries and sorry also from our end for the delay on getting you the problem. Here it goes: The task is to put together a simple website in Python with two pages:
+The task is to put together a simple website in Python with two pages:
 1) A page that requires no auth to access and which gives users a form for them to put in their email address. When the form is submitted a link to the 2nd page is sent to their email.
 2) The 2nd should have the following properties:
 2.1) Part of its address should be randomly generated and not easy to guess. In other words the only way to get to this page should be by going to the first page and submitting an email address.
